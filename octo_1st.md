@@ -1,15 +1,15 @@
-#React 컴포넌트
+# React 컴포넌트
 가장 먼저 알아야 하는 것은 React의 컴포넌트입니다. 컴포넌트는 개념적으로 props를 input으로 하고 UI가 어떻게 보여야 하는지 정의하는 React Element를 output으로 하는 함수입니다. 따라서 합성을 이용하여 “UI를 재사용할 수 있고 독립적인 단위로 쪼개어 생각”할 수 있게 합니다. 그래서 컴포넌트는 React.Component를 상속받아 정의하지만 컴포넌트 간에는 상속보다는 합성을 사용하길 권장합니다.
 
 
-##React 컴포넌트의 props와 state
+## React 컴포넌트의 props와 state
 컴포넌트는 두 가지 인스턴스 속성(property) props와 state를 가지고 있습니다. props는 컴포넌트의 mounting, updating 프로세스 시점에 값이 할당될 뿐 컴포넌트 내부에서 값을 변경할 수 없습니다. 상황에 따라 변경되어야 하는 값들은 state를 이용해야합니다.
 
 
 컴포넌트 간에는 무조건 props를 통해서만 데이터를 주고받고 props는 컴포넌트 내부에서 변경되지 않습니다.
 
 
-###React 컴포넌트의 setState() API
+### React 컴포넌트의 setState() API
 컴포넌트는 setState()(이하 ‘setState’)라는 API가 존재합니다. 이름 그대로 컴포넌트의 state를 변경할 때 사용하는 API입니다. 그냥 state를 직접 변경할 수도 있을 텐데 왜 굳이 API를 통해서 변경해야 할까요? 자바스크립트의 비교 연산자는 피연산자의 값이 아닌 reference 값을 기준으로 참/거짓을 리턴하기 때문입니다.
 
 
@@ -28,7 +28,7 @@
 
 
 
-###Route 컴포넌트
+### Route 컴포넌트
 <Route> 컴포넌트는 현재 주소창의 경로와 매치될 경우 보여줄 컴포넌트를 지정하는데 사용됩니다.
 path prop을 통해서 매치시킬 경로를 지정하고 component prop을 통해서 매치되었을 때 보여줄 컴포넌트를 할당합니다.
 ```jsx
